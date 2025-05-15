@@ -1,0 +1,69 @@
+.header {
+  height: 34vw;
+  margin: 30px auto;
+  background: url("/header_img.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 2s;
+}
+
+.header-contents h2 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+  color: white;
+  font-size: 1.3vw;
+}
+
+.header-contents button {
+  border: none;
+  background-color: white;
+  padding: 1vw 2.3vw;
+  font-weight: 600;
+  font-size: max(1vw, 13px);
+  color: rgb(11, 9, 9);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.header-contents button:hover {
+  background-color: rgba(212, 71, 46, 0.705);
+}
+
+/* Making it responsive */
+
+@media (max-width: 1050px) {
+  .header-contents {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-contents {
+    max-width: 65%;
+  }
+
+  .header-contents p {
+    display: none;
+  }
+
+  .header-contents button {
+    padding: 2vw 4vw;
+  }
+}
