@@ -9,7 +9,7 @@ import { Route } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 
 const App = () => {
-  const url = "http://localhost:4000";
+  const url = process.env.BACKEND_URL;
   return (
     <div>
       <ToastContainer />
